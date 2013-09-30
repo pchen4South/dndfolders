@@ -1,5 +1,5 @@
-#IdeaBox
-1. Have an idea
-2. Write it down
-3. Send it to everyone immediately for quick feedback
-4. Let only the strong survive!
+#Drag and Drop Folders
+1. Basic node backend
+2. Ember Front End
+3. Proof of concept for drag and drop in a folder tree
+4. Save changes to backend, folder tree is sent on connection
