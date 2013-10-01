@@ -39,11 +39,15 @@ App.ItemDropView = JQ.DropView.extend({
   revert: 'invalid',
   drop: function( event, ui ) {
       var model = null;
-      if(ui){model = $(ui.helper.context).data('model')}
+      if(ui){
+        model = JSON.parse($(ui.helper.context).data('model'));
+        model = App.Item.create(model);
+        }
       if(model)
       {
-        cont = this.get('content');
-1       cont.push(model);
+        window.cont = this.get('content');
+        cont.pushObject(model);
+        this.set('content', cont);
       }
   }
 })
