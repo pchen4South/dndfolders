@@ -23,7 +23,7 @@ App.ItemListView = Em.CollectionView.extend({
     },
     start: function(event, ui){
       //Grabs the Content and converts to JSON, then attaches the data
-      var dataString = this.serializeData(this.get('content');
+      var dataString = this.serializeData(this.get('content'));
       this.$().data("model", dataString);
     },
 
